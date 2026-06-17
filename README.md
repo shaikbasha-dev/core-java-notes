@@ -1,7 +1,3 @@
-Yes. Since you have now added **Interview Questions and Answers for every topic**, your README should explicitly highlight that feature.
-
-Here is an updated professional README section that includes it naturally.
-
 # Core Java Notes
 
 ## Overview
