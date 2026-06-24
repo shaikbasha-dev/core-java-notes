@@ -1,74 +1,79 @@
-# Core Java Notes
+# Core Java
 
 ## Overview
 
-This repository contains my Core Java notes prepared during my learning journey. The repository includes theory, syntax, example programs, output, pseudocode, code explanations, important interview concepts, and topic-wise interview questions with answers.
+This repository contains my Core Java learning notes and practice programs prepared during my Java learning journey.
 
-The content is organized topic-wise so that beginners and interview candidates can easily learn, practice, revise, and prepare for Core Java interviews.
+The repository is organized topic-wise and includes:
 
----
+* Theory and concepts
+* Java programs with comments
+* Output for each program
+* Pseudocode
+* Code explanation
+* Important interview concepts
+* Topic-wise interview questions and answers
+
+The content is designed for beginners, students, and job seekers preparing for Core Java interviews.
 
 ## Repository Structure
 
 ### 01-Java-Basics
 
-This folder contains the fundamental concepts of Java.
+This folder covers the fundamentals of Java.
 
-Topics covered:
+Topics:
 
 * Introduction to Java
 * Features of Java
-* JVM, JRE and JDK
+* JVM
+* JRE
+* JDK
 * Java Program Structure
 * Compilation and Execution Process
-* Memory Architecture of a Computer
-* Java Runtime Environment (JRE)
+* Memory Architecture
 
-Interview Questions:
+Includes:
 
-* Topic-wise interview questions and answers are included for Java Basics.
-
----
+* Theory
+* Examples
+* Interview Questions and Answers
 
 ### 02-Basic-Programs
 
-This folder contains beginner-friendly Java programs with explanations.
+This folder contains beginner-friendly Java programs.
 
 Programs:
 
 * Hello World
-* Display Programming Language Name and Release Year
+* Display Program
 * Sum of Integers
 * Square of Integer
-* Square of Integer using Scanner
+* Square using Scanner
 * Even Odd Program
 * Greatest of Three Numbers
-* Find Output using Concatenation and Addition
-* Escape Sequence Characters
-* Basic Calculator using Hard Coding
-* Basic Calculator using Soft Coding
+* Escape Sequences
+* Find Output Program
+* Basic Calculator
 
-Each file contains:
+Each program includes:
 
 * Definition
-* Java Program
+* Program
 * Output
 * Pseudocode
 * Code Explanation
-* Important Points
-* Interview Questions and Answers
-
----
+* Interview Questions
 
 ### 03-Data-Types-and-Type-Casting
 
-This folder contains Java data types and type casting concepts.
+This folder explains Java data types and type casting.
 
-Topics covered:
+Topics:
 
 * Variables
 * Primitive Data Types
-* Non-Primitive Data Types
+* Non Primitive Data Types
 * Type Casting
 * Implicit Type Casting
 * Explicit Type Casting
@@ -84,17 +89,18 @@ Primitive Types:
 * char
 * boolean
 
-Interview Questions:
+Includes:
 
-* Interview questions and answers are provided for every topic in this folder.
-
----
+* Theory
+* Programs
+* Examples
+* Interview Questions
 
 ### 04-Methods
 
-This folder explains methods in Java with examples.
+This folder explains Java methods and their types.
 
-Topics covered:
+Topics:
 
 * Methods Introduction
 * Predefined Methods
@@ -106,24 +112,20 @@ Topics covered:
 * Return Type With Argument
 * Method Overloading
 
-Each topic includes:
+Each topic contains:
 
 * Definition
 * Example Program
 * Output
 * Pseudocode
 * Code Explanation
-* Interview Questions and Answers
-
----
+* Interview Questions
 
 ### 05-Control-Statements
 
-This folder contains decision making and looping statements.
+This folder covers decision making and looping statements.
 
-Topics covered:
-
-Decision Making
+Decision Making:
 
 * if Statement
 * if else Statement
@@ -131,56 +133,57 @@ Decision Making
 * Nested if
 * switch Statement
 
-Looping Statements
+Looping:
 
 * for Loop
 * while Loop
 * do while Loop
 
-Jump Statements
+Jump Statements:
 
 * break Statement
 * continue Statement
 
-Interview Questions:
+Includes:
 
-* Every control statement includes interview questions and answers.
-
----
+* Theory
+* Programs
+* Pseudocode
+* Interview Questions
 
 ### 06-Arrays
 
-This folder contains array concepts and programs.
+This folder explains arrays in Java.
 
-Topics covered:
+Topics:
 
 * Arrays Introduction
 * One Dimensional Array
 * Two Dimensional Array
+* Search Element in 2D Array
 * Three Dimensional Array
 * Jagged Array
-* Search Element in 2D Array
 
-Concepts covered:
+Concepts Covered:
 
 * Array Declaration
 * Initialization
-* Advantages and Disadvantages
-* Accessing Elements
 * Array Length
+* Advantages and Disadvantages
 * Matrix Representation
+* Linear Search
 
-Interview Questions:
+Includes:
 
-* Topic-wise interview questions and answers are included for all array concepts.
-
----
+* Theory
+* Programs
+* Interview Questions
 
 ### 07-Strings
 
 This folder contains String concepts and programs.
 
-Topics covered:
+Topics:
 
 * Strings Introduction
 * Different Ways to Create Strings
@@ -191,61 +194,39 @@ Topics covered:
 * Palindrome String
 * intern() Method
 
-Important concepts:
+Important Concepts:
 
 * String Pool
 * Heap Memory
-* String Immutability
+* Immutable Strings
 * equals() vs ==
-* String Methods
 * String Manipulation
+* StringBuffer
+* StringBuilder
 
-Interview Questions:
+Includes:
 
-* Every String topic includes interview questions and answers for interview preparation.
+* Theory
+* Programs
+* Interview Questions
 
----
+## Repository Highlights
 
-## Interview Questions and Answers
-
-One of the main features of this repository is the Interview Questions and Answers section.
-
-* Interview questions are added topic-wise.
-* Every topic contains a dedicated interview questions file.
-* Each file contains a minimum of 20 important interview questions with answers.
-* Questions are prepared from beginner level to interview level.
-* Helpful for placement preparation and Java interviews.
-
-Topics covered:
-
-* Java Basics
-* Basic Programs
-* Data Types and Type Casting
-* Methods
-* Control Statements
-* Arrays
-* Strings
-
----
-
-## Features of this Repository
+This repository provides:
 
 * Topic-wise organization
 * Beginner friendly notes
-* Well commented Java programs
+* Well-commented Java programs
 * Output for every program
-* Pseudocode included
-* Code explanation included
+* Pseudocode for easy understanding
+* Detailed code explanations
 * Important interview concepts
-* Topic-wise Interview Questions and Answers
-* Minimum 20 interview questions for each topic
+* Topic-wise interview questions and answers
 * Suitable for revision and interview preparation
 
----
+## Interview Preparation
 
-## Repository Statistics
-
-Current Topics:
+Interview questions and answers are included for:
 
 * Java Basics
 * Basic Programs
@@ -255,11 +236,7 @@ Current Topics:
 * Arrays
 * Strings
 
-Total Sections: 7
-
-Interview Question Files: Added for every topic
-
----
+Questions are prepared from beginner level to interview level.
 
 ## Who Can Use This Repository
 
@@ -267,12 +244,10 @@ This repository is useful for:
 
 * Beginners learning Java
 * College students
-* Interview preparation
+* Freshers preparing for interviews
 * Placement preparation
-* Revision of Core Java concepts
-* Developers refreshing Java fundamentals
-
----
+* Java interview preparation
+* Developers revising Java fundamentals
 
 ## Author
 
@@ -281,8 +256,6 @@ Shaik Mahaboob Basha
 B.Tech - Electronics and Communication Engineering
 
 Aspiring Java Full Stack Developer
-
----
 
 ## Future Topics
 
@@ -299,6 +272,6 @@ The following topics will be added in future:
 * Lambda Expressions
 * Mini Projects
 
----
+## Conclusion
 
-If you find this repository useful, feel free to explore the files and use them for learning, revision, and interview preparation.
+This repository is created as a complete Core Java learning and interview preparation resource. It contains concepts, programs, explanations, and interview questions arranged in a structured manner for easy learning and revision.
