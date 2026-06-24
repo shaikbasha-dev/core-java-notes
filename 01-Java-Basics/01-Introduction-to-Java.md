@@ -52,7 +52,7 @@ Java programs are compiled into **Bytecode**, which is executed by the **Java Vi
 
 # Case Sensitivity in Java
 
-Java is a **case-sensitive programming language**.
+Java is a case-sensitive programming language.
 
 This means uppercase and lowercase letters are treated differently.
 
@@ -124,72 +124,20 @@ PI_VALUE
 
 # Flow of Java Program
 
-### Step 1
-
-Programmer writes source code.
-
-```text
-HelloWorld.java
-```
-
-↓
-
-### Step 2
-
-Java Compiler (javac) converts source code into bytecode.
-
-```text
-HelloWorld.class
-```
-
-↓
-
-### Step 3
-
-Bytecode is loaded into JVM.
-
-↓
-
-### Step 4
-
-JVM converts bytecode into machine code.
-
-↓
-
-### Step 5
-
-Processor executes machine code.
-
-↓
-
-### Step 6
-
-Output is displayed.
+1. Programmer writes source code (`HelloWorld.java`)
+2. Java Compiler (`javac`) converts source code into bytecode (`HelloWorld.class`)
+3. Bytecode is loaded into JVM.
+4. JVM converts bytecode into machine code.
+5. Processor executes machine code.
+6. Output is displayed.
 
 ---
 
 # Portability of Java
 
-A program is called portable if:
+A Java program compiled on one platform can run on another platform without recompilation.
 
-* It is compiled on one platform.
-* It executes on another platform without recompilation.
-
-Example:
-
-A Java program compiled on:
-
-* Windows
-
-Can run on:
-
-* Linux
-* macOS
-* Unix
-
-This is possible because Java programs run on JVM.
-
-Hence Java follows:
+This is possible because Java programs execute on JVM.
 
 **WORA = Write Once Run Anywhere**
 
@@ -199,41 +147,40 @@ Hence Java follows:
 
 A Platform is the environment where programs execute.
 
-There are two types:
+Types:
 
 1. Hardware Platform
 2. Software Platform
 
-Java is a **Software Platform**.
-
-Java Platform contains:
+Java is a Software Platform containing:
 
 * JVM
 * JRE
 * JDK
 
-Java converts programs into platform-independent bytecode, which can run on any JVM.
-
 ---
 
 # Architecture of Java
 
-```text
 JDK
-│
+
 ├── Java Compiler (javac)
-│
+
 └── JRE
-      │
-      ├── JVM
-      │     ├── JIT Compiler
-      │     ├── Interpreter
-      │     └── Runtime System
-      │
-      ├── Class Loader
-      ├── Byte Code Verifier
-      └── Library Files
-```
+
+  ├── JVM
+
+  │ ├── JIT Compiler
+
+  │ ├── Interpreter
+
+  │ └── Runtime System
+
+  ├── Class Loader
+
+  ├── Byte Code Verifier
+
+  └── Library Files
 
 ---
 
@@ -270,22 +217,9 @@ It contains:
 
 ---
 
-## Memory Architecture of a computer:
-1. If we want to execute any program, it must be provided to the processor.
-2. This is because only the processor has the ability to execute instructions and produce output.
-3. For permanent storage of data, we use the hard disk.
-4. Data stored on the hard disk is kept in the form of files.
-5. The process of moving data from the hard disk to RAM is called loading.
-6. The process of moving data from RAM to the hard disk is called saving.
-7. For executing a Java program, it is important that the program and required data be loaded into RAM.
-8. In RAM, all the software required to execute a program is also loaded.
-9. The software environment required to run Java programs is known as the JRE (Java Runtime Environment).
-
----
-
 ## JVM (Java Virtual Machine)
 
-JVM is responsible for converting bytecode into executable machine code.
+JVM converts bytecode into executable machine code.
 
 Responsibilities:
 
@@ -297,25 +231,7 @@ Responsibilities:
 
 ---
 
-## Class Loader
-
-Class Loader loads bytecode files from storage into the JVM memory.
-
----
-
-## Byte Code Verifier
-
-Byte Code Verifier checks whether bytecode is valid and secure before execution.
-
----
-
-## Library Files
-
-Library files contain predefined classes and functionalities required to execute Java applications.
-
----
-
-# Summary
+## Summary
 
 Java is a high-level, object-oriented, platform-independent programming language.
 
