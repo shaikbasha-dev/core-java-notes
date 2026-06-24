@@ -2,16 +2,18 @@
 
 ## Data Types
 
-### Q1. What is a data type in Java?
+### Q1. What is a Data Type in Java?
 
-Answer:
-A data type specifies the type of value that a variable can store, such as integer, decimal, character, or boolean.
+**Answer:**
+
+A Data Type specifies the type of value that a variable can store, such as integer, decimal, character, or boolean.
 
 ---
 
-### Q2. How many categories of data types are there in Java?
+### Q2. How many categories of Data Types are there in Java?
 
-Answer:
+**Answer:**
+
 There are two categories:
 
 1. Primitive Data Types
@@ -19,34 +21,38 @@ There are two categories:
 
 ---
 
-### Q3. What is a variable?
+### Q3. What is a Variable?
 
-Answer:
-A variable is a name given to a memory location used to store data.
+**Answer:**
 
-Example:
+A Variable is a name given to a memory location used to store data.
 
+**Example:**
+
+```java
 int age = 25;
+```
 
 ---
 
-### Q4. Why are data types important?
+### Q4. Why are Data Types important?
 
-Answer:
+**Answer:**
 
 * They specify the type of data.
 * They determine memory allocation.
 * They help perform valid operations on data.
+* They improve type safety.
 
 ---
 
-## Primitive Data Types
+# Primitive Data Types
 
-### Q5. How many primitive data types are there in Java?
+### Q5. How many Primitive Data Types are there in Java?
 
-Answer:
+**Answer:**
 
-There are 8 primitive data types:
+There are **8 Primitive Data Types**:
 
 * byte
 * short
@@ -61,136 +67,164 @@ There are 8 primitive data types:
 
 ### Q6. What is byte?
 
-Answer:
+**Answer:**
 
-byte is an 8-bit signed integer.
+`byte` is an 8-bit signed integer.
 
-Memory Size:
+**Memory Size:**
 
-1 byte
+```text
+1 Byte
+```
 
-Range:
+**Range:**
 
+```text
 -128 to 127
+```
 
 ---
 
 ### Q7. What is short?
 
-Answer:
+**Answer:**
 
-short is a 16-bit signed integer.
+`short` is a 16-bit signed integer.
 
-Memory Size:
+**Memory Size:**
 
-2 bytes
+```text
+2 Bytes
+```
 
 ---
 
 ### Q8. What is int?
 
-Answer:
+**Answer:**
 
-int is a 32-bit signed integer.
+`int` is a 32-bit signed integer.
 
-Memory Size:
+**Memory Size:**
 
-4 bytes
+```text
+4 Bytes
+```
 
-Example:
+**Example:**
 
+```java
 int age = 25;
+```
 
 ---
 
 ### Q9. What is long?
 
-Answer:
+**Answer:**
 
-long is a 64-bit signed integer.
+`long` is a 64-bit signed integer.
 
-Memory Size:
+**Memory Size:**
 
-8 bytes
+```text
+8 Bytes
+```
 
-Example:
+**Example:**
 
+```java
 long number = 123456789L;
+```
 
 ---
 
 ### Q10. What is float?
 
-Answer:
+**Answer:**
 
-float stores decimal values.
+`float` stores decimal values.
 
-Memory Size:
+**Memory Size:**
 
-4 bytes
+```text
+4 Bytes
+```
 
-Example:
+**Example:**
 
+```java
 float price = 25.5f;
+```
 
 ---
 
 ### Q11. What is double?
 
-Answer:
+**Answer:**
 
-double stores decimal values with higher precision.
+`double` stores decimal values with higher precision.
 
-Memory Size:
+**Memory Size:**
 
-8 bytes
+```text
+8 Bytes
+```
 
-Example:
+**Example:**
 
+```java
 double salary = 25000.75;
+```
 
 ---
 
 ### Q12. What is char?
 
-Answer:
+**Answer:**
 
-char stores a single Unicode character.
+`char` stores a single Unicode character.
 
-Memory Size:
+**Memory Size:**
 
-2 bytes
+```text
+2 Bytes
+```
 
-Example:
+**Example:**
 
+```java
 char grade = 'A';
+```
 
 ---
 
 ### Q13. What is boolean?
 
-Answer:
+**Answer:**
 
-boolean stores only two values:
+`boolean` stores only two values:
 
 * true
 * false
 
-Example:
+**Example:**
 
+```java
 boolean status = true;
+```
 
 ---
 
-## Non Primitive Data Types
+# Non Primitive Data Types
 
-### Q14. What are non-primitive data types?
+### Q14. What are Non Primitive Data Types?
 
-Answer:
+**Answer:**
 
-Non-primitive data types are reference types that store references to objects.
+Non Primitive Data Types are reference types that store references to objects.
 
-Examples:
+**Examples:**
 
 * String
 * Array
@@ -202,120 +236,125 @@ Examples:
 
 ### Q15. What is String?
 
-Answer:
+**Answer:**
 
 String is a sequence of characters.
 
-Example:
+**Example:**
 
+```java
 String name = "Java";
+```
 
 ---
 
 ### Q16. What is an Array?
 
-Answer:
+**Answer:**
 
-An array is a collection of elements of the same data type.
+An Array is a collection of elements of the same data type.
 
-Example:
+**Example:**
 
+```java
 int[] numbers = {10,20,30};
+```
 
 ---
 
 ### Q17. What is an Enum?
 
-Answer:
+**Answer:**
 
 Enum is a special class used to define fixed constants.
 
-Example:
+**Example:**
 
+```java
 enum Day {
+
 MONDAY,
+
 TUESDAY
+
 }
+```
 
 ---
 
-## Primitive vs Non Primitive
+# Primitive vs Non Primitive Data Types
 
 ### Q18. Difference between Primitive and Non Primitive Data Types?
 
-Answer:
-
-Primitive:
-
-* Stores actual value
-* Fixed size
-* Faster access
-
-Non Primitive:
-
-* Stores reference to objects
-* Size may vary
-* Supports methods
+| Primitive Data Types | Non Primitive Data Types     |
+| -------------------- | ---------------------------- |
+| Stores actual values | Stores references to objects |
+| Fixed memory size    | Memory size varies           |
+| Faster access        | Slightly slower              |
+| Cannot call methods  | Can call methods             |
 
 ---
 
-### Q19. Which is faster, primitive or non-primitive?
+### Q19. Which is faster, Primitive or Non Primitive?
 
-Answer:
+**Answer:**
 
-Primitive data types are faster because values are stored directly.
+Primitive Data Types are faster because values are stored directly in memory.
 
 ---
 
-### Q20. Can primitive types call methods?
+### Q20. Can Primitive Types call methods?
 
-Answer:
+**Answer:**
 
 No.
 
-Primitive types cannot call methods directly.
+Primitive Types cannot call methods directly.
 
 ---
 
-## Type Casting
+# Type Casting
 
-### Q21. What is type casting?
+### Q21. What is Type Casting?
 
-Answer:
+**Answer:**
 
-Type casting is the process of converting one data type into another.
+Type Casting is the process of converting one data type into another.
 
 ---
 
-### Q22. How many types of type casting are there?
+### Q22. How many Types of Type Casting are there?
 
-Answer:
+**Answer:**
 
-Two types:
+There are two types:
 
 1. Implicit Type Casting
 2. Explicit Type Casting
 
 ---
 
-## Implicit Type Casting
+# Implicit Type Casting
 
-### Q23. What is implicit type casting?
+### Q23. What is Implicit Type Casting?
 
-Answer:
+**Answer:**
 
-Implicit type casting is automatic conversion from smaller type to larger type.
+Implicit Type Casting is automatic conversion from a smaller data type to a larger data type.
 
 It is also called:
 
+```text
 Widening Conversion
+```
 
 ---
 
-### Q24. Give examples of implicit type casting.
+### Q24. Give examples of Implicit Type Casting.
 
-Answer:
+**Answer:**
 
+```text
 byte → short
 
 short → int
@@ -325,12 +364,13 @@ int → long
 long → float
 
 float → double
+```
 
 ---
 
-### Q25. Is explicit cast required in implicit type casting?
+### Q25. Is Explicit Cast required in Implicit Type Casting?
 
-Answer:
+**Answer:**
 
 No.
 
@@ -338,43 +378,47 @@ Java automatically performs the conversion.
 
 ---
 
-### Q26. Is data loss possible in implicit type casting?
+### Q26. Is Data Loss possible in Implicit Type Casting?
 
-Answer:
+**Answer:**
 
-Generally no.
+Generally No.
 
-Because smaller type is converted into larger type.
+Because a smaller data type is converted into a larger data type.
 
 ---
 
-### Q27. Example of implicit type casting?
+### Q27. Example of Implicit Type Casting?
 
-Answer:
+**Answer:**
 
+```java
 int num = 100;
 
 float value = num;
+```
 
 ---
 
-## Explicit Type Casting
+# Explicit Type Casting
 
-### Q28. What is explicit type casting?
+### Q28. What is Explicit Type Casting?
 
-Answer:
+**Answer:**
 
-Explicit type casting converts larger type into smaller type manually.
+Explicit Type Casting converts a larger data type into a smaller data type manually.
 
 It is also called:
 
+```text
 Narrowing Conversion
+```
 
 ---
 
-### Q29. Why is explicit casting required?
+### Q29. Why is Explicit Casting required?
 
-Answer:
+**Answer:**
 
 Because data may be lost during conversion.
 
@@ -382,146 +426,159 @@ Java requires the programmer to cast explicitly.
 
 ---
 
-### Q30. Example of explicit casting?
+### Q30. Example of Explicit Casting?
 
-Answer:
+**Answer:**
 
+```java
 long num = 1000;
 
 int value = (int) num;
+```
 
 ---
 
-### Q31. What is the syntax of explicit casting?
+### Q31. What is the Syntax of Explicit Casting?
 
-Answer:
+**Answer:**
 
+```java
 (TargetType) variable
+```
 
-Example:
+**Example:**
 
+```java
 int x = (int) longValue;
+```
 
 ---
 
-### Q32. Can data loss occur in explicit casting?
+### Q32. Can Data Loss occur in Explicit Casting?
 
-Answer:
+**Answer:**
 
 Yes.
 
-Information may be lost when converting a larger type into a smaller type.
+Information may be lost when converting a larger data type into a smaller data type.
 
 ---
 
-### Q33. What is the output?
+### Q33. What is the Output?
 
+```java
 int x = (int) 10.75;
 
 System.out.println(x);
+```
 
-Answer:
+**Answer:**
 
+```text
 10
+```
 
 The decimal part is removed.
 
 ---
 
-### Q34. Difference between implicit and explicit casting?
+### Q34. Difference between Implicit and Explicit Casting?
 
-Answer:
-
-Implicit Casting
-
-* Automatic
-* Smaller to larger
-* Safe conversion
-
-Explicit Casting
-
-* Manual
-* Larger to smaller
-* Data loss possible
+| Implicit Casting    | Explicit Casting     |
+| ------------------- | -------------------- |
+| Automatic           | Manual               |
+| Smaller to Larger   | Larger to Smaller    |
+| Safe Conversion     | Data Loss Possible   |
+| Widening Conversion | Narrowing Conversion |
 
 ---
 
-### Q35. Which type casting is safer?
+### Q35. Which Type Casting is safer?
 
-Answer:
+**Answer:**
 
-Implicit type casting is safer because there is no loss of data in normal widening conversions.
+Implicit Type Casting is safer because there is no loss of data in normal widening conversions.
 
 ---
 
-### Q36. Is char involved in type casting?
+### Q36. Is char involved in Type Casting?
 
-Answer:
+**Answer:**
 
 Yes.
 
-char can be converted to:
+`char` can be converted to:
 
 * int
 * long
 * float
 * double
 
-Example:
+**Example:**
 
+```java
 char ch = 'A';
 
 int x = ch;
+```
 
-Output:
+**Output:**
 
+```text
 65
+```
 
 ---
 
-### Q37. What is widening conversion?
+### Q37. What is Widening Conversion?
 
-Answer:
+**Answer:**
 
-Conversion from smaller data type to larger data type.
+Conversion from a smaller data type to a larger data type.
 
-Example:
+**Example:**
 
+```text
 int → double
+```
 
 ---
 
-### Q38. What is narrowing conversion?
+### Q38. What is Narrowing Conversion?
 
-Answer:
+**Answer:**
 
-Conversion from larger data type to smaller data type.
+Conversion from a larger data type to a smaller data type.
 
-Example:
+**Example:**
 
+```text
 double → int
+```
 
 ---
 
-### Q39. Which operator is used in explicit type casting?
+### Q39. Which operator is used in Explicit Type Casting?
 
-Answer:
+**Answer:**
 
-Cast operator.
+Cast Operator.
 
-Example:
+Examples:
 
+```java
 (int)
 
 (double)
 
 (float)
+```
 
 ---
 
-### Q40. Which topic is frequently asked in Java interviews?
+### Q40. Which topics are frequently asked in Java Interviews?
 
-Answer:
+**Answer:**
 
 * Primitive Data Types
 * Non Primitive Data Types
@@ -531,3 +588,5 @@ Answer:
 * Widening Conversion
 * Narrowing Conversion
 * Primitive vs Non Primitive Data Types
+* Type Casting Rules
+* Cast Operator
