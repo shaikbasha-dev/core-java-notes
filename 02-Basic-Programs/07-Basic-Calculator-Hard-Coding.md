@@ -1,68 +1,406 @@
-// CalculatorHC program performing basic arithmetic operations using hardcoded values
+# Basic Calculator Using Hard Coding in Java
 
-public class CalculatorHC { // Define class named CalculatorHC
-    public static void main(String[] args) { // Main method: entry point of the program
-        // Calculator program using hard coding
-        int num1 = 100; // Declare integer variable num1 and assign 100
-        int num2 = 50; // Declare integer variable num2 and assign 50
-        int add = num1 + num2; // Perform addition and store result in add variable
-        int sub = num1 - num2; // Perform subtraction and store result in sub variable
-        int mul = num1 * num2; // Perform multiplication and store result in mul variable
-        int div = num1 / num2; // Perform division and store result in div variable
-        System.out.println("Addition Result: " + add); // Print addition result with label
-        System.out.println("Subtraction Result: " + sub); // Print subtraction result with label
-        System.out.println("Multiplication Result: " + mul); // Print multiplication result with label
-        System.out.println("Division Result: " + div); // Print division result with label
+## Objective
+
+This program demonstrates how to perform basic arithmetic operations in Java using hard coded values.
+
+The program performs:
+
+* Addition (+)
+* Subtraction (-)
+* Multiplication (*)
+* Division (/)
+
+and displays the results on the console.
+
+---
+
+## Program
+
+```java
+// CalculatorHC program performing basic arithmetic operations using hard coded values
+
+// Define a public class named CalculatorHC
+public class CalculatorHC {
+
+    // Main method - JVM starts execution from here
+    public static void main(String[] args) {
+
+        // Calculator program using hard coded values
+
+        // Declare integer variable num1 and assign value 100
+        int num1 = 100;
+
+        // Declare integer variable num2 and assign value 50
+        int num2 = 50;
+
+        // Perform addition and store result in add
+        int add = num1 + num2;
+
+        // Perform subtraction and store result in sub
+        int sub = num1 - num2;
+
+        // Perform multiplication and store result in mul
+        int mul = num1 * num2;
+
+        // Perform division and store result in div
+        int div = num1 / num2;
+
+        // Display addition result
+        System.out.println("Addition Result: " + add);
+
+        // Display subtraction result
+        System.out.println("Subtraction Result: " + sub);
+
+        // Display multiplication result
+        System.out.println("Multiplication Result: " + mul);
+
+        // Display division result
+        System.out.println("Division Result: " + div);
+
     } // End of main method
-} // End of class CalculatorHC
 
-/* 
-Output
+} // End of CalculatorHC class
+```
+
+---
+
+## Output
+
+```text
 Addition Result: 150
 Subtraction Result: 50
 Multiplication Result: 5000
 Division Result: 2
+```
 
-Pseudocode
-Start program
-Set num1 to 100
-Set num2 to 50
-Compute add = num1 + num2
-Compute sub = num1 - num2
-Compute mul = num1 * num2
-Compute div = num1 / num2
-Print "Addition Result: " followed by add
-Print "Subtraction Result: " followed by sub
-Print "Multiplication Result: " followed by mul
-Print "Division Result: " followed by div
-End program
+---
 
-Code Explanation
-public class CalculatorHC { ... }
-Defines a class named CalculatorHC that will perform calculator operations.
-public static void main(String[] args) { ... }
-Declares the main method, which is the entry point for the Java program.
-// Calculator program using hard coding
-A comment explaining the program uses hardcoded values rather than user input.
+## Pseudocode
+
+```text
+START
+
+Declare num1 = 100
+
+Declare num2 = 50
+
+Calculate:
+
+add = num1 + num2
+
+sub = num1 - num2
+
+mul = num1 * num2
+
+div = num1 / num2
+
+Display Addition Result
+
+Display Subtraction Result
+
+Display Multiplication Result
+
+Display Division Result
+
+STOP
+```
+
+---
+
+## Line-by-Line Explanation
+
+### Line 1
+
+```java
+public class CalculatorHC
+```
+
+Explanation:
+
+* `public` → The class is accessible from anywhere.
+* `class` → Keyword used to define a class.
+* `CalculatorHC` → Name of the class.
+
+**HC stands for Hard Coding.**
+
+---
+
+### Line 2
+
+```java
+public static void main(String[] args)
+```
+
+Explanation:
+
+* `public` → Accessible from anywhere.
+* `static` → JVM calls this method without creating an object.
+* `void` → Does not return any value.
+* `main` → Entry point of Java application.
+* `String[] args` → Stores command line arguments.
+
+---
+
+### Line 3
+
+```java
 int num1 = 100;
-Creates an integer variable num1 with the value 100.
-int num2 = 50;
-Creates an integer variable num2 with the value 50.
-int add = num1 + num2;
-Performs addition of num1 and num2 and stores the result 150 in add.
-int sub = num1 - num2;
-Performs subtraction of num2 from num1 and stores the result 50 in sub.
-int mul = num1 * num2;
-Performs multiplication of num1 and num2 and stores the result 5000 in mul.
-int div = num1 / num2;
-Performs integer division of num1 by num2 and stores the result 2 in div.
-System.out.println("Addition Result: " + add);
-Prints the label and the addition result on a new line.
-System.out.println("Subtraction Result: " + sub);
-Prints the label and the subtraction result on a new line.
-System.out.println("Multiplication Result: " + mul);
-Prints the label and the multiplication result on a new line.
-System.out.println("Division Result: " + div);
-Prints the label and the division result on a new line.
- */
+```
 
+Explanation:
+
+* `int` → Primitive integer data type.
+* `num1` → Variable name.
+* `100` → Assigned integer value.
+
+---
+
+### Line 4
+
+```java
+int num2 = 50;
+```
+
+Explanation:
+
+Creates another integer variable and stores value `50`.
+
+---
+
+### Line 5
+
+```java
+int add = num1 + num2;
+```
+
+Explanation:
+
+Performs addition.
+
+Calculation:
+
+```text
+100 + 50 = 150
+```
+
+Stores result in:
+
+```java
+add
+```
+
+---
+
+### Line 6
+
+```java
+int sub = num1 - num2;
+```
+
+Explanation:
+
+Performs subtraction.
+
+Calculation:
+
+```text
+100 - 50 = 50
+```
+
+Stores result in:
+
+```java
+sub
+```
+
+---
+
+### Line 7
+
+```java
+int mul = num1 * num2;
+```
+
+Explanation:
+
+Performs multiplication.
+
+Calculation:
+
+```text
+100 × 50 = 5000
+```
+
+Stores result in:
+
+```java
+mul
+```
+
+---
+
+### Line 8
+
+```java
+int div = num1 / num2;
+```
+
+Explanation:
+
+Performs division.
+
+Calculation:
+
+```text
+100 / 50 = 2
+```
+
+Stores result in:
+
+```java
+div
+```
+
+---
+
+### Output Statements
+
+```java
+System.out.println("Addition Result: " + add);
+```
+
+Prints:
+
+```text
+Addition Result: 150
+```
+
+---
+
+```java
+System.out.println("Subtraction Result: " + sub);
+```
+
+Prints:
+
+```text
+Subtraction Result: 50
+```
+
+---
+
+```java
+System.out.println("Multiplication Result: " + mul);
+```
+
+Prints:
+
+```text
+Multiplication Result: 5000
+```
+
+---
+
+```java
+System.out.println("Division Result: " + div);
+```
+
+Prints:
+
+```text
+Division Result: 2
+```
+
+---
+
+## Arithmetic Operators Used
+
+| Operator | Meaning        | Example  |
+| -------- | -------------- | -------- |
+| `+`      | Addition       | 100 + 50 |
+| `-`      | Subtraction    | 100 - 50 |
+| `*`      | Multiplication | 100 * 50 |
+| `/`      | Division       | 100 / 50 |
+
+---
+
+## Why Do We Use Hard Coding?
+
+Hard Coding means:
+
+Values are written directly inside the source code.
+
+Example:
+
+```java
+int num1 = 100;
+int num2 = 50;
+```
+
+Advantages:
+
+* Easy to understand.
+* Suitable for beginners.
+* Quick for small programs.
+
+Disadvantages:
+
+* Values cannot be changed during execution.
+* Requires editing code and recompiling.
+* Not suitable for real-world applications.
+
+---
+
+## Hard Coding vs Soft Coding
+
+| Hard Coding                | Soft Coding                     |
+| -------------------------- | ------------------------------- |
+| Values are fixed           | Values are entered by user      |
+| Less flexible              | More flexible                   |
+| Code modification required | No modification required        |
+| Used for simple examples   | Used in real-world applications |
+
+Hard Coding Example:
+
+```java
+int num1 = 100;
+```
+
+Soft Coding Example:
+
+```java
+int num1 = sc.nextInt();
+```
+
+---
+
+## Special Method Used
+
+### println()
+
+Syntax:
+
+```java
+System.out.println(data);
+```
+
+Purpose:
+
+* Prints output on console.
+* Moves cursor to next line automatically.
+
+---
+
+## Summary
+
+This program demonstrates:
+
+* Integer variable declaration.
+* Arithmetic operators.
+* Addition, subtraction, multiplication and division.
+* Hard Coding concept.
+* String concatenation.
+* Output using `System.out.println()`.
+
+This is one of the most important beginner-level Java programs for understanding arithmetic operations and hard coded values.
