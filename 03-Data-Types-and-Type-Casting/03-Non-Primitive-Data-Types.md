@@ -1,103 +1,572 @@
+# Non-Primitive Data Types in Java
+
+## Objective
+
+This program demonstrates the most commonly used **Non-Primitive Data Types** in Java.
+
+The program explains:
+
+* String
+* Array
+* Class Object
+* Enum
+* Reference Types
+* Difference between Primitive and Non-Primitive Data Types
+
+Non-Primitive Data Types are also called **Reference Types** because they store references (memory addresses) of objects rather than storing actual values directly.
+
+---
+
+## Program
+
+```java
 /*
- * Headline: Java Program Demonstrating Non-Primitive Data Types
- *
- * This program shows common non-primitive data types in Java:
- * - String
- * - Array
- * - Class object
- * - Enum
- *
- * Non-primitive types are reference types. They store references
- * to objects rather than the values directly.
+ * Java Program Demonstrating Non-Primitive Data Types
  */
 
+// Define public class
 public class NonPrimitiveDataTypes {
-    public static void main(String[] args) {
-        // Pseudocode:
-        // 1. Create a String value.
-        // 2. Create an array of integers.
-        // 3. Create an object of a custom Person class.
-        // 4. Create an enum value for a day of the week.
-        // 5. Print each example and explain the reference behavior.
-        //
-        // Explanation:
-        // - String is a built-in class and part of Java's standard library.
-        // - Arrays are objects that hold multiple elements of the same type.
-        // - Custom classes are user-defined reference types.
-        // - Enums are special classes that define a fixed set of constants.
 
-        // String example: a non-primitive object for text values
+    // Main method - JVM starts execution from here
+    public static void main(String[] args) {
+
+        // String example
         String sampleString = "Hello, Java Non-Primitive Types";
 
-        // Array example: arrays are objects in Java
+        // Array example
         int[] sampleArray = {10, 20, 30};
 
-        // Object example: Person is a custom class type
+        // Object example
         Person samplePerson = new Person("Ayesha", 22);
 
-        // Enum example: Day is a reference type with fixed constants
+        // Enum example
         Day sampleDay = Day.MONDAY;
 
-        // Print values and object references
+        // Display heading
         System.out.println("Java Non-Primitive Data Types Example");
+
         System.out.println("-----------------------------------");
+
+        // Print String value
         System.out.println("String value      : " + sampleString);
+
+        // Print Array values
         System.out.print("Array values      : ");
+
         for (int value : sampleArray) {
+
             System.out.print(value + " ");
+
         }
+
         System.out.println();
+
+        // Print object value
         System.out.println("Person object     : " + samplePerson);
+
+        // Print enum value
         System.out.println("Enum value        : " + sampleDay);
 
-        // Explain that the following are references to objects
         System.out.println();
-        System.out.println("Note: String, arrays, classes, and enums are reference types.");
-        System.out.println("They store a reference (memory address) to the object, not the value itself.");
-        System.out.println();
-        System.out.println("Primitive vs Non-Primitive:");
-        System.out.println("- Primitive types store values directly.");
-        System.out.println("- Non-primitive types store references to objects.");
-        System.out.println("- Examples: int, float, char, boolean vs String, arrays, classes, enums.");
+
+        System.out.println("Note: String, arrays, classes and enums are reference types.");
+
+        System.out.println("They store references to objects rather than values.");
+
     }
 
-    // Custom class example for non-primitive data type demonstration
+    // Nested Person class
     static class Person {
+
         String name;
+
         int age;
 
         Person(String name, int age) {
+
             this.name = name;
+
             this.age = age;
+
         }
 
         @Override
+
         public String toString() {
+
             return name + " (" + age + " years old)";
+
         }
+
     }
 
-    // Enum example showing a fixed set of constants
+    // Enum example
+
     enum Day {
-        MONDAY,
-        TUESDAY,
-        WEDNESDAY,
-        THURSDAY,
-        FRIDAY,
-        SATURDAY,
-        SUNDAY
-    }
-}
 
-/*
-Sample output:
+        MONDAY,
+
+        TUESDAY,
+
+        WEDNESDAY,
+
+        THURSDAY,
+
+        FRIDAY,
+
+        SATURDAY,
+
+        SUNDAY
+
+    }
+
+}
+```
+
+---
+
+## Output
+
+```text
 Java Non-Primitive Data Types Example
 -----------------------------------
+
 String value      : Hello, Java Non-Primitive Types
-Array values      : 10 20 30 
+
+Array values      : 10 20 30
+
 Person object     : Ayesha (22 years old)
+
 Enum value        : MONDAY
 
-Note: String, arrays, classes, and enums are reference types.
-They store a reference (memory address) to the object, not the value itself.
-*/
+
+Note: String, arrays, classes and enums are reference types.
+
+They store references to objects rather than values.
+```
+
+---
+
+## Pseudocode
+
+```text
+START
+
+Create String variable
+
+Create Integer Array
+
+Create Person object
+
+Create Enum value
+
+Display String
+
+Display Array values
+
+Display Object
+
+Display Enum value
+
+Display reference type information
+
+STOP
+```
+
+---
+
+# What are Non-Primitive Data Types?
+
+Non-Primitive Data Types are:
+
+```text
+Reference Types
+```
+
+Because:
+
+They store:
+
+```text
+Reference (Memory Address)
+```
+
+of an object rather than storing the actual value directly.
+
+---
+
+## Types of Non-Primitive Data Types
+
+Java provides the following commonly used Non-Primitive Data Types:
+
+1. String
+
+2. Array
+
+3. Class
+
+4. Interface
+
+5. Enum
+
+---
+
+# 1. String
+
+String is used to store:
+
+```text
+Text or Sequence of Characters
+```
+
+Example:
+
+```java
+String name = "Java";
+```
+
+---
+
+### Program Statement
+
+```java
+String sampleString = "Hello, Java Non-Primitive Types";
+```
+
+Explanation:
+
+* `String` is a predefined class.
+* It stores character sequences.
+* String objects are immutable.
+
+---
+
+### Output
+
+```text
+Hello, Java Non-Primitive Types
+```
+
+---
+
+# 2. Array
+
+Array stores:
+
+```text
+Multiple values of same data type
+```
+
+Example:
+
+```java
+int[] numbers = {10,20,30};
+```
+
+---
+
+### Program Statement
+
+```java
+int[] sampleArray = {10,20,30};
+```
+
+Explanation:
+
+* `int[]` means integer array.
+* Stores multiple integer values.
+* Array size becomes fixed after creation.
+
+---
+
+### Array Output
+
+```text
+10 20 30
+```
+
+---
+
+# Enhanced For Loop Used
+
+Program:
+
+```java
+for(int value : sampleArray)
+```
+
+This is called:
+
+```text
+Enhanced For Loop
+
+or
+
+For Each Loop
+```
+
+Purpose:
+
+Iterates through all array elements automatically.
+
+---
+
+# 3. Class Object
+
+A Class is:
+
+```text
+Blueprint of an Object
+```
+
+Objects are created from classes.
+
+---
+
+### Program Statement
+
+```java
+Person samplePerson = new Person("Ayesha",22);
+```
+
+Explanation:
+
+* `Person` → Class name.
+* `samplePerson` → Object reference.
+* `new` → Creates object.
+* Constructor initializes values.
+
+---
+
+## Person Class
+
+```java
+static class Person
+```
+
+Contains:
+
+```text
+name
+
+age
+```
+
+Fields.
+
+---
+
+## Constructor
+
+```java
+Person(String name,int age)
+```
+
+Purpose:
+
+Initializes object variables.
+
+---
+
+### this Keyword
+
+```java
+this.name = name;
+
+this.age = age;
+```
+
+Meaning:
+
+Current object's variables are assigned values.
+
+---
+
+## toString() Method
+
+```java
+@Override
+
+public String toString()
+```
+
+Purpose:
+
+Returns object information in String format.
+
+Output:
+
+```text
+Ayesha (22 years old)
+```
+
+Without toString():
+
+```text
+Person@1a2b3c
+```
+
+would be displayed.
+
+---
+
+# 4. Enum
+
+Enum means:
+
+```text
+Enumeration
+```
+
+It stores:
+
+```text
+Fixed Set of Constants
+```
+
+---
+
+### Program Statement
+
+```java
+Day sampleDay = Day.MONDAY;
+```
+
+Explanation:
+
+* `Day` → Enum name.
+* `MONDAY` → Enum constant.
+
+---
+
+## Enum Declaration
+
+```java
+enum Day{
+
+MONDAY,
+
+TUESDAY,
+
+WEDNESDAY,
+
+THURSDAY,
+
+FRIDAY,
+
+SATURDAY,
+
+SUNDAY
+
+}
+```
+
+---
+
+### Output
+
+```text
+MONDAY
+```
+
+---
+
+# Primitive vs Non Primitive Data Types
+
+| Primitive            | Non Primitive              |
+| -------------------- | -------------------------- |
+| Stores actual values | Stores references          |
+| Fixed memory size    | Dynamic memory             |
+| Faster               | Slightly slower            |
+| Cannot call methods  | Can call methods           |
+| Predefined           | Predefined or User Defined |
+
+---
+
+### Example
+
+Primitive:
+
+```java
+int age = 25;
+```
+
+Stores:
+
+```text
+25
+```
+
+directly.
+
+---
+
+Non Primitive:
+
+```java
+String name = "Java";
+```
+
+Stores:
+
+```text
+Reference
+
+↓
+
+"Java"
+```
+
+---
+
+# Memory Representation
+
+```text
+Primitive
+
+int age = 25
+
+Memory:
+
+age → 25
+
+
+Non Primitive
+
+String name = "Java"
+
+Memory:
+
+name → Reference → "Java"
+```
+
+---
+
+# Why are Non Primitive Data Types Important?
+
+Because they:
+
+* Store large and complex data.
+* Support Object Oriented Programming.
+* Allow methods and objects.
+* Enable code reusability.
+* Provide flexibility.
+
+---
+
+# Summary
+
+This program demonstrates:
+
+* String Data Type
+* Array Data Type
+* Class Object
+* Enum
+* Enhanced For Loop
+* Constructor
+* this keyword
+* toString() method
+* Reference Types
+* Primitive vs Non Primitive
+
+Non-Primitive Data Types are one of the most important concepts in Core Java because Object Oriented Programming is completely based on them.
