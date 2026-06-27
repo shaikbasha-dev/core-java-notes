@@ -2,7 +2,7 @@
 
 ## Definition
 
-Java is a high-level, class-based, object-oriented programming language designed to have as few implementation dependencies as possible.
+Java is a **high-level, class-based, object-oriented programming language** designed to have as few implementation dependencies as possible.
 
 Java is a general-purpose programming language that follows the principle of **WORA (Write Once, Run Anywhere)**. A Java program compiled on one platform can run on another platform without recompilation.
 
